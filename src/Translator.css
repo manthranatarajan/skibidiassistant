@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.mainContainer{
+    background-image: url('./images/skibidi-main-1721837465699.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+
+  }
+
+  #title{
+    font-size: 75px;
+    margin-top: -150px;
+    color: white;
+   }
+  
+  .parentContainer{
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+#engtxt{
+    height: 30vh;
+    width: 30vw;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  #brottxt{
+    height: 30vh;
+    width: 30vw;
+    background-color: white;
+  }
+
+  #subhead{
+    font-size: 15px;
+    color: white;
+    font-style: italic;
+  }
+
+  button{
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 10vw;
+    max-height: 10vh;
+    margin: 20px;
+  }
