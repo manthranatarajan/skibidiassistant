@@ -22,7 +22,7 @@ export const getUnhelpfulResponse = async (userInput) => { // Exported function
       return "Oops, something went wrong!";
     }
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error with API:", error);
     return "Oops, something went wrong!";
   }
 };
