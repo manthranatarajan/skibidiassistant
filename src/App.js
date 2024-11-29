@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Unhelpful Personal Assistant</h1>
+      <h1>sassybaka</h1>
 
       <div className="chatbox">
         {chatHistory.map((message, index) => (
