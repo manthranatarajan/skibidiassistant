@@ -1,0 +1,36 @@
+/* Fullscreen background */
+.main-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.imgur.com/jkMwVbb.jpg'); /* Replace with a meme image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Title styling */
+  .main-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Chatbot link styling */
+  .chatbot-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .chatbot-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }  
