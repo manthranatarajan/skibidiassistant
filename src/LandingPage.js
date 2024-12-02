@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Assuming you're using React Router
-import "./LandingPage.css"; // Import the styles for the page
+import { Link } from "react-router-dom"; 
+import "./LandingPage.css";
 
-function MainPage() {
+function LandingPage() {
   return (
     <div className="main-page">
       <h1>Welcome to Brainrot Central</h1>
@@ -10,8 +10,11 @@ function MainPage() {
       <Link to="/chatbot" className="chatbot-link">
         Open Chatbot
       </Link>
+      <Link to="/translator" className="translator-link">
+        Go to Translator
+      </Link>
     </div>
   );
 }
 
-export default MainPage;
+export default LandingPage;
