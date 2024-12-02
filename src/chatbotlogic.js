@@ -2,30 +2,30 @@
 import { useState } from "react";
 
 // Function to handle chatbot logic (communicating with the backend)
-export const getUnhelpfulResponse = async (userInput) => { // Exported function
+export const getUnhelpfulResponse = async (userInput) => {
   try {
-    // Sending the user's input to the backend server
-    const response = await fetch("http://localhost:5000/chat", {
+    const response = await fetch("http://localhost:8080/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ input: userInput }),
+      body: JSON.stringify({ input: userInput }), // Sending user input as JSON
     });
 
-    // Handling the server's response
     if (response.ok) {
       const data = await response.json();
-      return data.choices[0].message.content; // Assuming the response follows OpenAI's format
+      return data.choices[0].message.content; // Extract chatbot's response
     } else {
-      console.error("Failed to get response from server:", response.statusText);
-      return "Oops, something went wrong!";
+      console.error("Backend error:", response.statusText);
+      return "Oops! Something went wrong!";
     }
   } catch (error) {
-    console.error("Error with API:", error);
-    return "Oops, something went wrong!";
+    console.error("Error connecting to backend:", error);
+    return "Oops! Something went wrong!";
   }
 };
+
+
 
 // React component for the chatbot UI
 export const Chatbot = () => {

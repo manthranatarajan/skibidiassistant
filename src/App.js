@@ -1,10 +1,8 @@
-//import logo from './logo.svg';
 import './App.css';
 import React, { useState } from "react";
 import { getUnhelpfulResponse } from "./chatbotlogic";
 
 function App() {
-
   const [userInput, setUserInput] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
   const [isLoading, setIsLoading] = useState(false); // Loading indicator
@@ -34,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>sassybaka</h1>
+      <h1>Unhelpful Personal Assistant</h1>
 
       <div className="chatbox">
         {chatHistory.map((message, index) => (
