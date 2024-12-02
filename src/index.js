@@ -6,12 +6,13 @@ import LandingPage from './LandingPage';
 import Chatbot from './Chatbot';
 import { BrowserRouter } from 'react-router-dom';
 import Translator from './Translator';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <LandingPage />
+    <Translator />
     </BrowserRouter>
   </React.StrictMode>
 );

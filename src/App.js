@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import Chatbot from './chatbot';         
+import Chatbot from './Chatbot';         
 import Translator from './Translator';   
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
-import "./LandingPage.css";
-
+import "./LandingPage.css"; 
+//ts dont work gang smh
 function LandingPage() {
   return (
     <div className="main-page">
